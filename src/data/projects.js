@@ -16,5 +16,13 @@ export const projects = [
       position: "Producer, Director",
       projectType: "Visual",
     },
+    {
+      image: "project2.mp4",
+      title: "Project 4four",
+      description: "A short description of Project 4.",
+      softwareIcons: ["Adobe Premiere Pro", "Final Cut"],
+      position: "Producer, Director",
+      projectType: "Visual",
+    }
   ];
   
