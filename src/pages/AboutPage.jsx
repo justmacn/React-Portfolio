@@ -9,7 +9,7 @@ const AboutPage = () => {
         className='media-item'
         borderRadius="full"
         boxSize="150px"
-        src="public/assets/images/RkicXp6zSCCjyyXKyqg7Uw.png"
+        src="/assets/images/RkicXp6zSCCjyyXKyqg7Uw.png"
         alt="Profile"
         mx="auto"
       />
