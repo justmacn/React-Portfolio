@@ -6,9 +6,10 @@ const AboutPage = () => {
   return (
     <Box p={10} textAlign="center">
       <Image
+        className='media-item'
         borderRadius="full"
         boxSize="150px"
-        src="/path-to-profile-image.jpg"
+        src="public/assets/images/RkicXp6zSCCjyyXKyqg7Uw.png"
         alt="Profile"
         mx="auto"
       />

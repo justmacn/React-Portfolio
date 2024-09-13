@@ -1,0 +1,8 @@
+.media-item {
+    max-width: 40vw;
+    max-height: 40vh;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Ensures the image/video maintains its aspect ratio */
+  }
+  

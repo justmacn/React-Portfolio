@@ -11,7 +11,7 @@ import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
 import WorkPage from './pages/WorkPage';
 import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 // portfolio routes to the components
 const router = createBrowserRouter([
