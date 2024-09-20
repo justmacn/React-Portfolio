@@ -22,15 +22,3 @@
     font-style: normal;
     text-transform: uppercase;
 }
-
-.navBox .navBtn:hover {
-    color: goldenrod;
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.navBox .activeNav {
-    color: rgb(153, 32, 218);
-    text-decoration: none;
-    font-weight: 400;
-}
