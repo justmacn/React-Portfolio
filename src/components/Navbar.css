@@ -1,0 +1,36 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* navbar container */
+.navBox {
+    /* background-color: blue; */
+    position: relative;
+}
+
+/* logo positioning */
+.logo {
+    position: absolute;
+}
+
+/* navbar button styling */
+.navBox .navBtn {
+    color: rgb(0, 0, 0);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.05rem;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.navBox .navBtn:hover {
+    color: goldenrod;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navBox .activeNav {
+    color: rgb(153, 32, 218);
+    text-decoration: none;
+    font-weight: 400;
+}
