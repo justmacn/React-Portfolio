@@ -1,0 +1,57 @@
+/* fonts` */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,124;1,124&display=swap');
+
+/* header styling */
+.homeBox .header {
+    font-family: 'Exo 2', sans;
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+}
+
+/* subhear styling */
+.homeBox .subheader {
+    font-family: 'Josefin Sans', sans;
+    font-size: 18px;
+    font-weight: 350;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(310deg, #ffffff 40%, #ffd572 60%, #ffbb00 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* intro line styling */
+.homeBox .intro {
+    font-family: 'Josefin Sans', sans;
+    font-size: 16px;
+    font-weight: 330;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* tagline styling */
+.homeBox .tagline {
+    font-family: 'Exo', sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.homeBox span {
+    color: #ffbb00;
+}
+
+/* button styling */
+.homeBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homeBox .chevronBtn {
+    position: fixed;  /* Fix it at the bottom of the viewport */
+    bottom: 50px;     /* 20px from the bottom to give it some spacing */
+
+}
