@@ -7,16 +7,12 @@ import './styles/Home.css'
 const HomePage = () => {
   return (
     <Box as='main'>
-      <Box as='section' className='homeBox' textAlign="center" p={10}>
+      <Box as='section' className='homeBox' display='flex' justifyContent='right' alignItems='end' flexDirection='column' w='600px' p={10}>
         {/* Intro */}
         <Text className='intro' fontSize="xl" mt={4}>Justin McLaughlin Is...</Text>
         
         {/* Header */}
-        <Heading 
-        className='header'
-        >
-          Justmacn
-        </Heading>
+        <Heading className='header'>Justmacn</Heading>
         
         {/* Subheader */}
         <Text className='subheader' fontSize="xl" mt={4}>Storyteller & Developer</Text>
