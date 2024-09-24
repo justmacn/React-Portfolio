@@ -6,8 +6,8 @@ import './styles/Home.css'
 
 const HomePage = () => {
   return (
-    <Box as='main' className='homeBox'>
-      <Box as='section' textAlign="center" p={10}>
+    <Box as='main'>
+      <Box as='section' className='homeBox' textAlign="center" p={10}>
         {/* Intro */}
         <Text className='intro' fontSize="xl" mt={4}>Justin McLaughlin Is...</Text>
         

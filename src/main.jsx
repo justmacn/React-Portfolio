@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react'
+import { StrictMode } from 'react';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
 
 // Render the chakra ui provider 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ChakraProvider>
+  <StrictMode>
     <RouterProvider router={router} />
-  </ChakraProvider>
+  </StrictMode>
 );

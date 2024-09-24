@@ -43,15 +43,31 @@
     color: #ffbb00;
 }
 
-/* button styling */
-.homeBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* button styling & animations */
+.homeContainer .chevronBtn {
+    position: fixed; 
+    bottom: 50px;    
+    animation: bounce 2.5s ease 3, bounce2 3s ease infinite;
+    animation-delay: 0s, 60s;
+    /* animation: bounce 2s ease 5, pulse 1.5s ease infinite; */
 }
 
-.homeBox .chevronBtn {
-    position: fixed;  /* Fix it at the bottom of the viewport */
-    bottom: 50px;     /* 20px from the bottom to give it some spacing */
-
+@keyframes bounce {
+	0%, 10%, 30%, 50%, 70%, 100% {transform: translateY(0);}
+	20% {transform: translateY(-45px);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
+
+@keyframes bounce2 {
+	0%, 10%, 30%, 50%, 70%, 100% {transform: translateY(0);}
+	20% {transform: translateY(-45px);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+/* @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+} */

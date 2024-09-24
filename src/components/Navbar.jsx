@@ -17,7 +17,7 @@ const Navbar = () => {
                 sx={{
                     // hover styling
                     _hover: {
-                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00; 100%)',
+                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00 100%)',
                     bgClip: 'text',
                     fontWeight: '350',
                     },
@@ -35,7 +35,7 @@ const Navbar = () => {
         <Button as={NavLink} to="/work" variant="link" className='navBtn'
                 sx={{
                     _hover: {
-                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00; 100%)',
+                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00 100%)',
                     bgClip: 'text',
                     fontWeight: '350',
                     },
@@ -53,7 +53,7 @@ const Navbar = () => {
         <Button as={NavLink} to="/about" variant="link" className='navBtn'
                 sx={{
                     _hover: {
-                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00; 100%)',
+                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00 100%)',
                     bgClip: 'text',
                     fontWeight: '350',
                     },
@@ -71,7 +71,7 @@ const Navbar = () => {
         <Button as={NavLink} to="/contact" variant="link" className='navBtn'
                 sx={{
                     _hover: {
-                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00; 100%)',
+                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00 100%)',
                     bgClip: 'text',
                     fontWeight: '350',
                     },
