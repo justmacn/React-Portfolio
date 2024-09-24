@@ -14,11 +14,12 @@
 
 /* navbar button styling */
 .navBox .navBtn {
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 1.05rem;
     font-weight: 300;
     font-style: normal;
     text-transform: uppercase;
+    /* color: #fff5dc; */
 }
