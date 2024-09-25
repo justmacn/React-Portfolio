@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Heading, Text, IconButton, Container } from '@chakra-ui/react';
-import { HiChevronDown } from "react-icons/hi2";
+import { TbChevronCompactDown } from "react-icons/tb";
 import { Link } from 'react-router-dom';
 import './styles/Home.css'
 
@@ -9,7 +9,7 @@ const HomePage = () => {
     <Box as='main' display='flex' flexDirection='column' flexWrap='wrap' alignContent='center' alignItems='center'>
       <Box as='section' className='homeBox' display='flex' justifyContent='right' alignItems='end' flexDirection='column' p={10}>
         {/* Intro */}
-        <Text className='intro' mr={2}>Justin McLaughlin Is...</Text>
+        <Text className='intro' mr={1}>Justin McLaughlin Is...</Text>
         
         {/* Header */}
         <Heading className='header' mb={1} mr={5}>Justmacn</Heading>
@@ -31,7 +31,7 @@ const HomePage = () => {
           color='#ffbb00'
           aria-label='Navigate to Work'
           fontSize='7xl'
-          icon={<HiChevronDown />}
+          icon={<TbChevronCompactDown />}
           className='chevronBtn'
           sx={{
             // hover styling

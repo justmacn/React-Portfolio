@@ -7,12 +7,39 @@
     margin-top: 10rem;
 }
 
-/* header styling */
+/* header styling & animation */
 .homeBox .header {
     font-family: 'Exo 2', sans;
     font-size: 143px;
     font-weight: 700;
-    color: white;
+    color: linear-gradient(135deg, #ffffff, #e6e6e6 40%, #ffffff);
+    position: relative;
+    /* background: linear-gradient(120deg, #ffffff 48%, #fff1ce 50%, #ffffff 53%);
+    background-size: 300%; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3.5s ease-in 1;
+    animation-delay: 0s; */
+}
+
+.homeBox .header:hover {
+    background: linear-gradient(120deg, #ffffff 48%, #fff1ce 50%, #ffffff 53%);
+    background-size: 300%; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4.5s ease-in infinite;
+    cursor: pointer;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 85%;
+    }
+    100% {
+        background-position: -70%;
+    }
 }
 
 /* subhear styling */
@@ -53,10 +80,9 @@
 /* button styling & animations */
 .homeContainer .chevronBtn {
     position: fixed; 
-    bottom: 50px;    
-    animation: bounce 2.5s ease 3, bounce2 3s ease infinite;
-    animation-delay: 0s, 60s;
-    /* animation: bounce 2s ease 5, pulse 1.5s ease infinite; */
+    bottom: 70px;    
+    animation: bounce 2.5s ease 1, bounce2 2.5s ease 1, bounce3 2.5s ease 1, pulse 3s ease infinite;
+    animation-delay: 0.5s, 5s, 10s, 14s;
 }
 
 @keyframes bounce {
@@ -67,13 +93,27 @@
 }
 
 @keyframes bounce2 {
-	0%, 10%, 50%, 70%, 100% {transform: translateY(0);}
+	0%, 10%, 30%, 50%, 70%, 100% {transform: translateY(0);}
 	20% {transform: translateY(-45px);}
-	40% {transform: translateY(15px);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
 
-/* @keyframes pulse {
+@keyframes bounce3 {
+	0%, 10%, 30%, 50%, 70%, 100% {transform: translateY(0);}
+	20% {transform: translateY(-45px);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+@keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
+    50% { transform: scale(1.18); }
     100% { transform: scale(1); }
+}
+
+/* @keyframes bounce3 {
+    0%, 10%, 50%, 70%, 100% {transform: translateY(0);}
+    20% {transform: translateY(-45px);}
+    40% {transform: translateY(15px);}
 } */
