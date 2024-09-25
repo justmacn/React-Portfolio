@@ -15,7 +15,7 @@ const HomePage = () => {
         <Heading className='header' mb={1} mr={5}>Justmacn</Heading>
         
         {/* Subheader */}
-        <Text className='subheader' mt={10} mr={1}>Storyteller & Developer</Text>
+        <Text className='subheader' mt={10} mr={2}>Storyteller & Developer</Text>
         
         {/* Tagline */}
         <Text className='tagline' textAlign='right' mt={7}>Visual stories through<br></br><span>code.</span></Text>
