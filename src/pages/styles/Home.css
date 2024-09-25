@@ -1,10 +1,16 @@
 /* fonts` */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,124;1,124&display=swap');
 
+/* container styling */
+.homeBox {
+    width: 750px;
+    margin-top: 10rem;
+}
+
 /* header styling */
 .homeBox .header {
     font-family: 'Exo 2', sans;
-    font-size: 100px;
+    font-size: 143px;
     font-weight: 700;
     color: white;
 }
@@ -12,10 +18,10 @@
 /* subhear styling */
 .homeBox .subheader {
     font-family: 'Josefin Sans', sans;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 350;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(310deg, #ffffff 40%, #ffd572 60%, #ffbb00 75%);
+    background: -webkit-linear-gradient(260deg, #fff5e3 17%, #ffcb79 65%, #ffc53e 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -23,24 +29,25 @@
 /* intro line styling */
 .homeBox .intro {
     font-family: 'Josefin Sans', sans;
-    font-size: 16px;
-    font-weight: 330;
-    color: white;
+    font-size: 17px;
+    font-weight: 300;
     text-transform: uppercase;
+    color: white;
+    font-style: italic;
 }
 
 /* tagline styling */
 .homeBox .tagline {
     font-family: 'Exo', sans;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 575;
     color: white;
     font-style: italic;
-    line-height: 24px;
+    line-height: 34px;
 }
 
 .homeBox span {
-    color: #ffbb00;
+    color: #ffcb51;
 }
 
 /* button styling & animations */
@@ -60,10 +67,9 @@
 }
 
 @keyframes bounce2 {
-	0%, 10%, 30%, 50%, 70%, 100% {transform: translateY(0);}
+	0%, 10%, 50%, 70%, 100% {transform: translateY(0);}
 	20% {transform: translateY(-45px);}
-	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
+	40% {transform: translateY(15px);}
 }
 
 /* @keyframes pulse {

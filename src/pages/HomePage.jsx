@@ -6,19 +6,19 @@ import './styles/Home.css'
 
 const HomePage = () => {
   return (
-    <Box as='main'>
-      <Box as='section' className='homeBox' display='flex' justifyContent='right' alignItems='end' flexDirection='column' w='600px' p={10}>
+    <Box as='main' display='flex' flexDirection='column' flexWrap='wrap' alignContent='center' alignItems='center'>
+      <Box as='section' className='homeBox' display='flex' justifyContent='right' alignItems='end' flexDirection='column' p={10}>
         {/* Intro */}
-        <Text className='intro' fontSize="xl" mt={4}>Justin McLaughlin Is...</Text>
+        <Text className='intro' mr={2}>Justin McLaughlin Is...</Text>
         
         {/* Header */}
-        <Heading className='header'>Justmacn</Heading>
+        <Heading className='header' mb={1} mr={5}>Justmacn</Heading>
         
         {/* Subheader */}
-        <Text className='subheader' fontSize="xl" mt={4}>Storyteller & Developer</Text>
+        <Text className='subheader' mt={10} mr={1}>Storyteller & Developer</Text>
         
         {/* Tagline */}
-        <Text className='tagline' fontSize="xl" mt={4}>Visual stories through<br></br><span>code.</span></Text>
+        <Text className='tagline' textAlign='right' mt={7}>Visual stories through<br></br><span>code.</span></Text>
       </Box>
 
       <Container as='div' className='homeContainer' centerContent>
