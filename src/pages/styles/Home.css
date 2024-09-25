@@ -4,7 +4,7 @@
 /* container styling */
 .homeBox {
     width: 750px;
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 /* header styling & animation */
@@ -24,7 +24,7 @@
 }
 
 .homeBox .header:hover {
-    background: linear-gradient(120deg, #ffffff 48%, #fff1ce 50%, #ffffff 53%);
+    background: linear-gradient(120deg, #ffffff 48%, #fff8ce 50%, #ffffff 53%);
     background-size: 300%; 
     background-clip: text;
     -webkit-background-clip: text;
@@ -48,7 +48,7 @@
     font-size: 24px;
     font-weight: 350;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(260deg, #fff5e3 17%, #ffcb79 65%, #ffc53e 90%);
+    background: -webkit-linear-gradient(260deg, #fff5e3 12%, #ffcb79 65%, #ffc53e 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -74,7 +74,7 @@
 }
 
 .homeBox span {
-    color: #ffcb51;
+    color: #f7be14;
 }
 
 /* button styling & animations */

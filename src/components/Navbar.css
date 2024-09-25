@@ -10,6 +10,9 @@
 /* logo positioning */
 .logo {
     position: absolute;
+    /* min-height: 70px; */
+    /* min-width: 95px;  */
+    top: 30px;
 }
 
 /* navbar button styling */

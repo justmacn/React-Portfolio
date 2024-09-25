@@ -1,23 +1,24 @@
 // import components from chakra ui
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Box, HStack, Button, Image } from '@chakra-ui/react';
+import { HStack, Button, Image, Flex, Spacer } from '@chakra-ui/react';
 import './Navbar.css';
 
 
 // Nvabar componenet w/ style prop for active state
 const Navbar = () => {
   return (
-    <Box as="nav" p={4} className='navBox'>
-      <Image boxSize='55px' objectFit='cover' mx={5} mt={2} src='/assets/images/jmLogo/jm-logo@2x.png' alt='JMcX logo' className='logo' />
-      <HStack spacing={8} justify="right" mx={10} mt={4}>
+    <Flex as="nav" p={4} pt={5} className='navBox' minWidth='max-content' alignItems='center' gap='2'>
+      <Image boxSize='75px' objectFit='cover' mx={8} pt={0} src='/assets/images/jmLogo/jm-logo@3x-2.png' alt='JMcX logo' className='logo' />
+      <Spacer />
+      <HStack spacing={8} justify="right" mx={7} pt={6}>
 
         {/* Home Tab */}
         <Button as={NavLink} to="/" variant="link" className='navBtn'
                 sx={{
                     // hover styling
                     _hover: {
-                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00 100%)',
+                    bgGradient: 'linear(140deg, #fff5e3 12%, #ffcb79 65%, #ffc53e 90%)',
                     bgClip: 'text',
                     fontWeight: '350',
                     },
@@ -35,7 +36,7 @@ const Navbar = () => {
         <Button as={NavLink} to="/work" variant="link" className='navBtn'
                 sx={{
                     _hover: {
-                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00 100%)',
+                    bgGradient: 'linear(140deg, #fff5e3 12%, #ffcb79 65%, #ffc53e 90%)',
                     bgClip: 'text',
                     fontWeight: '350',
                     },
@@ -53,7 +54,7 @@ const Navbar = () => {
         <Button as={NavLink} to="/about" variant="link" className='navBtn'
                 sx={{
                     _hover: {
-                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00 100%)',
+                    bgGradient: 'linear(140deg, #fff5e3 12%, #ffcb79 65%, #ffc53e 90%)',
                     bgClip: 'text',
                     fontWeight: '350',
                     },
@@ -71,7 +72,7 @@ const Navbar = () => {
         <Button as={NavLink} to="/contact" variant="link" className='navBtn'
                 sx={{
                     _hover: {
-                    bgGradient: 'linear(to-br, #fff5dc 20%, #ffd572 65%, #ffbb00 100%)',
+                    bgGradient: 'linear(140deg, #fff5e3 12%, #ffcb79 65%, #ffc53e 90%)',
                     bgClip: 'text',
                     fontWeight: '350',
                     },
@@ -85,7 +86,7 @@ const Navbar = () => {
           Contact
         </Button>
         </HStack>
-    </Box>
+    </Flex>
   );
 };
 
