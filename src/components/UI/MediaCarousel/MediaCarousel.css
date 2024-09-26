@@ -1,8 +1,19 @@
+/* carousel styling */
+.media-container {
+    max-width: 1080px;
+    min-width: 1080px;
+}
+
 .media-item {
-    max-width: 40vw;
-    max-height: 40vh;
-    width: auto;
-    height: auto;
-    object-fit: cover; /* Ensures the image/video maintains its aspect ratio */
+    max-width: 50vw;
+    max-height: 50vh;
+    /* width: auto; */
+    /* height: auto; */
+    object-fit: contain; /* Ensures the image/video maintains its aspect ratio */
+    border-radius: 3%;
   }
   
+/* arrow button styling */
+.nextBtn {
+    margin-right: -18.5rem;
+}

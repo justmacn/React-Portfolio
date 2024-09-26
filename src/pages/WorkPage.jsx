@@ -3,6 +3,7 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from '@chakra-ui/react';
 import { projects } from '../data/projects';
 import MediaCarousel from '../components/UI/MediaCarousel';
 import ProjectInfoCard from '../components/UI/ProjectInfoCard';
+import './styles/Work.css'
 
 const WorkPage = () => {
   const [currentTab, setCurrentTab] = useState("All");
@@ -16,7 +17,7 @@ const WorkPage = () => {
     if (filteredProjects.length > 0) {
       setCurrentProject(filteredProjects[0]);
     } else {
-      setCurrentProject(null); 
+      setCurrentProject(null);
     }
   }, [currentTab]);
 
@@ -42,7 +43,7 @@ const WorkPage = () => {
       : projects.filter((project) => project.projectType === currentTab);
 
     if (filteredProjects.length > 0) {
-      setCurrentProject(filteredProjects[index]);  
+      setCurrentProject(filteredProjects[index]);
     }
   };
 
@@ -51,57 +52,63 @@ const WorkPage = () => {
     : projects.filter((project) => project.projectType === currentTab);
 
   return (
-    <Box p={10}>
-      <Tabs onChange={handleTabChange} variant="enclosed">
-        <TabList>
-          <Tab>All</Tab>
-          <Tab>Visual</Tab>
-          <Tab>Code</Tab>
-        </TabList>
+    <Box as='main' p={10}>
+      <Tabs onChange={handleTabChange} variant="unstyle">
+        <Box as='div' display='flex' justifyContent='start'>
+          <TabList className='tab-group'>
+            <Tab className='tab tab1'>All</Tab>
+            <Tab className='tab tab2'>Film</Tab>
+            <Tab className='tab tab3'>Code</Tab>
+          </TabList>
+        </Box>
 
-        <TabPanels>
-          <TabPanel>
-            {filteredProjects.length > 0 ? (
-              <>
-                <MediaCarousel
-                  projects={filteredProjects}
-                  onSlideChange={handleCarouselChange} 
-                />
-                <ProjectInfoCard project={currentProject} />
-              </>
-            ) : (
-              <p>No projects available.</p>
-            )}
-          </TabPanel>
+        <Box as='section'>
+          <TabPanels>
+            <TabPanel>
+              {filteredProjects.length > 0 ? (
+                <>
+                  <Box>
+                    <MediaCarousel
+                      projects={filteredProjects}
+                      onSlideChange={handleCarouselChange}
+                    />
+                  </Box>
+                  <ProjectInfoCard project={currentProject} />
+                </>
+              ) : (
+                <p>No projects available.</p>
+              )}
+            </TabPanel>
 
-          <TabPanel>
-            {filteredProjects.length > 0 ? (
-              <>
-                <MediaCarousel
-                  projects={filteredProjects}
-                  onSlideChange={handleCarouselChange}
-                />
-                <ProjectInfoCard project={currentProject} />
-              </>
-            ) : (
-              <p>No projects available for Visual.</p>
-            )}
-          </TabPanel>
+            <TabPanel>
+              {filteredProjects.length > 0 ? (
+                <>
+                  <MediaCarousel
+                    projects={filteredProjects}
+                    onSlideChange={handleCarouselChange}
+                  />
+                  <ProjectInfoCard project={currentProject} />
+                </>
+              ) : (
+                <p>No projects available for Visual.</p>
+              )}
+            </TabPanel>
 
-          <TabPanel>
-            {filteredProjects.length > 0 ? (
-              <>
-                <MediaCarousel
-                  projects={filteredProjects}
-                  onSlideChange={handleCarouselChange}
-                />
-                <ProjectInfoCard project={currentProject} />
-              </>
-            ) : (
-              <p>No projects available for Code.</p>
-            )}
-          </TabPanel>
-        </TabPanels>
+            <TabPanel>
+              {filteredProjects.length > 0 ? (
+                <>
+                  <MediaCarousel
+                    projects={filteredProjects}
+                    onSlideChange={handleCarouselChange}
+                  />
+                  <ProjectInfoCard project={currentProject} />
+                </>
+              ) : (
+                <p>No projects available for Code.</p>
+              )}
+            </TabPanel>
+          </TabPanels>
+        </Box>
       </Tabs>
     </Box>
   );

@@ -1,0 +1,41 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+
+/* tab styling */
+.tab-group {
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.tab-group .tab {
+    text-transform: uppercase;
+    padding: 8px;
+    border: 1px solid none;
+    margin: 6px 0;
+    margin-inline: 1px;
+    width: 4.5rem;
+    height: 2.25rem;
+    font-size: 13px;
+    font-family: 'Albert Sans';
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5px;
+}
+
+/* individual tab coloring */
+/* .tab-group .tab1 {
+    background-color: #c8c8c859;
+    margin-right: 5px;
+}
+
+.tab-group .tab2 {
+    background-color: #c8c8c859;
+    margin-inline: 10px;
+}
+
+.tab-group .tab3 {
+    background-color: #c8c8c859;
+    margin-left: 5px;
+} */
