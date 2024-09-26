@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from '@chakra-ui/react';
 import { projects } from '../data/projects';
 import MediaCarousel from '../components/UI/MediaCarousel';
-import ProjectInfoCard from '../components/UI/ProjectInfoCard';
 import './styles/Work.css'
 
 const WorkPage = () => {
@@ -71,9 +70,9 @@ const WorkPage = () => {
                     <MediaCarousel
                       projects={filteredProjects}
                       onSlideChange={handleCarouselChange}
+                      info={currentProject}
                     />
                   </Box>
-                  <ProjectInfoCard project={currentProject} />
                 </>
               ) : (
                 <p>No projects available.</p>
@@ -86,8 +85,8 @@ const WorkPage = () => {
                   <MediaCarousel
                     projects={filteredProjects}
                     onSlideChange={handleCarouselChange}
+                    info={currentProject}
                   />
-                  <ProjectInfoCard project={currentProject} />
                 </>
               ) : (
                 <p>No projects available for Visual.</p>
@@ -100,8 +99,8 @@ const WorkPage = () => {
                   <MediaCarousel
                     projects={filteredProjects}
                     onSlideChange={handleCarouselChange}
+                    info={currentProject}
                   />
-                  <ProjectInfoCard project={currentProject} />
                 </>
               ) : (
                 <p>No projects available for Code.</p>

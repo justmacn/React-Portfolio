@@ -1,7 +1,7 @@
 /* carousel styling */
 .media-container {
-    max-width: 1080px;
-    min-width: 1080px;
+    max-width: 880px;
+    min-width: 880px;
 }
 
 .media-item {
@@ -15,5 +15,5 @@
   
 /* arrow button styling */
 .nextBtn {
-    margin-right: -18.5rem;
+    margin-right: -16rem;
 }

@@ -5,10 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import { Flex, Box, IconButton, VStack } from '@chakra-ui/react';
-import { VsxIcon } from "react-iconsax-vite";
+import { LeftSquare, RightSquare } from '@icon-park/react';
+import ProjectInfoCard from '../ProjectInfoCard';
 import './MediaCarousel.css';
 
-const MediaCarousel = ({ projects, onSlideChange }) => {
+const MediaCarousel = ({ projects, onSlideChange, info }) => {
   // settings for slider component
   const settings = {
     dots: true,
@@ -40,6 +41,8 @@ const MediaCarousel = ({ projects, onSlideChange }) => {
 
   return (
     <Flex as='div' alignItems="center" justifyContent="center" className='slider' pb={5}>
+        {/* project info */}
+        <ProjectInfoCard project={info} />
         {/* carousel viewer */}
         <Box as='div' flex='1' className='media-container'>
             <Slider ref={slider => {sliderRef = slider;}} {...settings}>
@@ -60,15 +63,15 @@ const MediaCarousel = ({ projects, onSlideChange }) => {
 
         {/* carousel nav buttons */}
         <Box as='div'>
-            <VStack className='arrowBtn' spacing={3.5}>
+            <VStack className='arrowBtn' spacing={1}>
                 <IconButton 
-                  icon={<VsxIcon iconName="ArrowSquareLeft" type="outline" size="70" color="#5e70d2"/>}
+                  icon={<LeftSquare theme="outline" size="60" fill="#ffffff" strokeWidth={1.25} strokeLinecap="square"/>}
                   variant='ghost'
                   onClick={previous}
                   className='prevBtn'
                 />
                 <IconButton 
-                  icon={<VsxIcon iconName="ArrowSquareRight" type="outline" size="70" color="#5e70d2"/>}
+                  icon={<RightSquare theme="outline" size="60" fill="#ffffff" strokeWidth={1.25} strokeLinecap="square"/>}
                   variant='ghost'
                   onClick={next}
                   className='nextBtn'
