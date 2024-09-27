@@ -42,7 +42,10 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
   return (
     <Flex as='div' alignItems="center" justifyContent="center" className='slider' pb={5}>
         {/* project info */}
-        <ProjectInfoCard project={info} />
+        <Box as='div' className='info-container'>
+            <ProjectInfoCard project={info} />
+        </Box>
+
         {/* carousel viewer */}
         <Box as='div' flex='1' className='media-container'>
             <Slider ref={slider => {sliderRef = slider;}} {...settings}>
@@ -62,8 +65,8 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
         </Box>
 
         {/* carousel nav buttons */}
-        <Box as='div'>
-            <VStack className='arrowBtn' spacing={1}>
+        <Box as='div' className='btn-container'>
+            <VStack spacing={1}>
                 <IconButton 
                   icon={<LeftSquare theme="outline" size="60" fill="#ffffff" strokeWidth={1.25} strokeLinecap="square"/>}
                   variant='ghost'

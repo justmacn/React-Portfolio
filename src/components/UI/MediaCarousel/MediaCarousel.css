@@ -1,3 +1,6 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+
 /* carousel styling */
 .media-container {
     max-width: 880px;
@@ -16,4 +19,32 @@
 /* arrow button styling */
 .nextBtn {
     margin-right: -16rem;
+}
+
+/* info card styling */
+.info-container {
+    
+}
+
+.info-container .title {
+    font-family: 'Exo 2', sans;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.info-container .role {
+    font-family: 'Josefin Sans', sans;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.info-container .description {
+    font-family: 'Exo 2', sans;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.info-container .demo-link {
+    text-decoration: underline;
 }
