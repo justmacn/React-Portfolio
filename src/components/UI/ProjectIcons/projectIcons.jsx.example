@@ -1,0 +1,59 @@
+import React from 'react';
+import { HStack, Icon } from '@chakra-ui/react';
+import {  // import all project icons
+  Css3Original,
+  Html5Original,
+  JavascriptOriginal,
+  ReactOriginal,
+  PostgresqlPlain,
+  MongodbOriginal,
+  NodejsOriginal,
+  PhotoshopOriginal,
+  PremiereproOriginal,
+  FigmaOriginal,
+  JqueryPlain,
+  TailwindcssOriginal,
+  BootstrapOriginal,
+  ChakrauiOriginal,
+  ExpressOriginal,
+  VitejsOriginal,
+  JestPlain,
+  GraphqlPlain,
+  NpmOriginal,
+} from 'devicons-react';
+
+// Icon mapping
+const iconMap = {
+  Css3Original,
+  Html5Original,
+  JavascriptOriginal,
+  ReactOriginal,
+  PostgresqlPlain,
+  MongodbOriginal,
+  NodejsOriginal,
+  PhotoshopOriginal,
+  PremiereproOriginal,
+  FigmaOriginal,
+  JqueryPlain,
+  TailwindcssOriginal,
+  BootstrapOriginal,
+  ChakrauiOriginal,
+  ExpressOriginal,
+  VitejsOriginal,
+  JestPlain,
+  GraphqlPlain,
+  NpmOriginal,
+};
+
+const ProjectIcons = ({ icons }) => {
+  return (
+    <HStack spacing={4} mt={4}>
+      {icons.map((iconName, idx) => {
+        const IconComponent = iconMap[iconName]; // Get the correct icon component from the mapping
+        return IconComponent ? <Icon key={idx} as={IconComponent} size='30' /> : null;
+      })}
+    </HStack>
+  );
+};
+
+export default ProjectIcons

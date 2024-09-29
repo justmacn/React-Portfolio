@@ -4,7 +4,7 @@ export const projects = [
       image: "/assets/images/website-presentation-with-smartphone-mockup-isolated_359791-339.png",
       title: "An App.",
       description: "A short description of Project 1.",
-      icons: ["React", "Chakra UI", "Node.js"],
+      icons: ["JavascriptOriginal", "Css3Original", "ReactOriginal", "NodejsOriginal", "VitejsOriginal", "ChakrauiOriginal", "NpmOriginal", "FigmaOriginal"],
       position: "Frontend Developer",
       projectType: "Code",
       url: "https://img.freepik.com/premium-psd/website-presentation-with-smartphone-mockup-isolated_359791-339.jpg?semt=ais_hybrid",

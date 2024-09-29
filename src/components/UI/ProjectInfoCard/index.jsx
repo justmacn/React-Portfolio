@@ -1,9 +1,9 @@
 import React from 'react';
-import { Box, Heading, Text, HStack, Icon, Link } from '@chakra-ui/react';
+import { Box, Heading, Text, Icon, Link } from '@chakra-ui/react';
 import { Right } from '@icon-park/react';
 import '../MediaCarousel/MediaCarousel.css';
 
-import iconTest from '/assets/icons/adobe-premiere-svg.png'
+import ProjectIcons from '../ProjectIcons/index.jsx';
 
 const ProjectInfoCard = ({ project }) => {
   if (!project) {
@@ -18,11 +18,7 @@ const ProjectInfoCard = ({ project }) => {
       <Text as='p' className='description' mt={2}>{project.description}</Text>
 
       {/* project tools/icons */}
-      <HStack spacing={4} mt={4}>
-
-          <Icon as={iconTest} />
-
-      </HStack>
+      <ProjectIcons icons={project.icons} />
 
       {/* demo link */}
       <Link href={`${project.url}`} mt={4} color="teal.500">
