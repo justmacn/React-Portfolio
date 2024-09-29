@@ -180,7 +180,7 @@ const ProjectIcons = ({ icons }) => {
         const iconData = iconMap[iconName];
 
         // custom SVGs icons - <Image> component
-        if (typeof iconData.icon === "string" && iconData.icon.endsWith('.svg')) {
+        if (typeof iconData.icon === "string") {
           return (
             <IconButton
               key={idx}
