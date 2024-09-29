@@ -9,7 +9,7 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <Flex as="nav" p={4} pt={5} className='navBox' minWidth='max-content' alignItems='center' gap='2'>
-      <Image boxSize='75px' objectFit='cover' mx={8} pt={0} src='/assets/images/jmLogo/jm-logo@3x-2.png' alt='JMcX logo' className='logo' />
+      <Image boxSize='75px' objectFit='cover' mx={8} pt={0} src='/assets/images/logo/jm-logo@3x-2.png' alt='JMcX logo' className='logo' />
       <Spacer />
       <HStack spacing={8} justify="right" mx={7} pt={6}>
 
