@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 59" width="59" height="59">
+	<title>leica-svg</title>
+	<defs>
+		<image  width="59" height="59" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA7AQMAAAD/62DwAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAABFJREFUeJxjZIACxlHGKAMMAEBNADwQHCMXAAAAAElFTkSuQmCC"/>
+		<image  width="59" height="59" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAA7CAMAAADy+wKBAAAAAXNSR0IB2cksfwAAAblQTFRFAAAAAAAAAAAAAAAABQUFVVZWSUpKCgsLDg4O2t7dvL++Gxsb3ODfvcHAIyQk1dnYio2MJicnzNDPe318TU5Oj5KRAQEBbW9u0dXUn6KhFRUVwMPCnaCfKysrsrW1wsbFOzw8AwMDBgYGT1BQys3MFxgYJCUlj5GQJygo09fWfoGA0tbVP0FAHh8fxsnIpKemFhYWoqWkKywstLe2w8fGTU9OBAQEZWZmztHQlZeWHR0d29/e19vavsLBFhcXCQkJiYuLFBQUo6aloaSkjZCPCgoK2d3ceXt6BwcHXF5dgoSDx8vKJSYmqayrFBUUjY+OJycnV1lYf4GBz9LRQUJCwcXEsLOyODk5xcjIExQUm56dlJeWh4mJwMPDICAgEBAQCwwMTk9PaWxrUlRUsLSzwMTDq66tyMzLMjMzKioqKSoqxcnIPj8/VFZVGhsbDAwM0NTTfoCA0tXUzdHQxMjHKCgoTE1NT1FQPT49YmRjKCkpvcC/ODk4vL+/sLOzOTo6v8PCrrGwQEFBRkdGNDU1Q0REGRkZRUZGNTY2CwsLDQ0NNDU0PkA/MzQ0RUdGLCwsLi8vAAAAAAAAtR/SSAAAAJN0Uk5T77//zf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////92xxG9QTgAAAWBJREFUeJxjZCAbMDIyjeod1Tuqd1TvqF6a6mViZGT8TaZeNqDe7+TqZWH8R7leHkbGTyCan5HxvdBvtvf/gGwRoKteSjAyPpMGMhgfKjAyfuW5i0WvyjPp2yBajZHxhuJLecZrQLY24z3ly3r/mC8yGDBCwQls9qLoBdrFeITBlvHPWTWIXgZ7xudSZ0wZ92J1M4pe5V+vZRh3uR+zZnwC1cvgtY/JkXELdv+qPHPeDKL9TggB9XIDLX4L8u51qN5wxosG54xfotobyLgEzI+9cyl4EZCOXx22QFFZ9pE82HvvoXozGB8oTsvew2Y/BaE3l3EnJHl9fJbP+A+oN3GHJ2NvyS/27rLlXAGdFYwLn0l89l1Rxcj4p4NBJJOR8fQ2uF6RHEaoF+pyxf6BWU/XvWlhfD5FpOg3W2XHI/lyNxfG0lr+B2ALe79xFzEMdF4Y1Tuqd1TvqN7hrnci+XoBJGZ8eq0n3fkAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Layer 2" href="#img1" x="0" y="0"/>
+	<use id="lumix-seeklogo copy" href="#img2" x="1" y="-2"/>
+</svg>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HStack, IconButton, Icon } from '@chakra-ui/react';
+import { HStack, IconButton, Icon, Button, Image } from '@chakra-ui/react';
 import { //import icons from devicons
   Css3Original,
   Html5Original,
@@ -115,59 +115,60 @@ const iconMap = {
     icon: NpmOriginal,
     link: "https://www.npmjs.com",
   },
-  FinalCutPro: {
+  // custom svg icons
+  FinalCut: {
     name: "Final Cut Pro",
-    icon: "/assets/images/icons/finalcut.svg", // Custom SVG path
+    icon: "/assets/images/tech-icons/finalcut.svg", 
     link: "https://www.apple.com/final-cut-pro/",
   },
   Canon: {
-    name: "Canon C100",
-    icon: "/assets/images/icons/canon.svg", // Custom SVG path
+    name: "Canon",
+    icon: "/assets/images/tech-icons/canon.svg", 
     link: "https://www.usa.canon.com/internet/portal/us/home/products/details/cameras/cinema-eos/cinema-eos-c100",
   },
   Photoshop: {
     name: "Adobe Photoshop",
-    icon: "/assets/images/icons/photoshop.svg", // Custom SVG path
+    icon: "/assets/images/tech-icons/photoshop.svg", 
     link: "https://www.adobe.com/products/photoshop.html",
   },
   PremierePro: {
     name: "Adobe Premiere Pro",
-    icon: "/assets/images/icons/premierepro.svg", // Custom SVG path
+    icon: "/assets/images/tech-icons/premierepro.svg", 
     link: "https://www.adobe.com/products/premiere.html",
   },
   Visme: {
     name: "Visme",
-    icon: "/assets/images/icons/visme.svg", // Custom SVG path
+    icon: "/assets/images/tech-icons/visme.svg", 
     link: "https://www.visme.co/",
   },
   Panasonic: {
-    name: "Panasonic GH Series",
-    icon: "/assets/images/icons/panasonic.svg", // Custom SVG path
+    name: "Panasonic",
+    icon: "/assets/images/tech-icons/panasonic.svg", 
     link: "https://shop.panasonic.com/pages/lumix-g-series-mirrorless-micro-four-thirds-cameras",
   },
   Lumix: {
-    name: "Lumix",
-    icon: "/assets/images/icons/lumix.svg", // Custom SVG path
+    name: "Lumix G",
+    icon: "/assets/images/tech-icons/lumix.svg", 
     link: "https://www.panasonic.com/global/consumer/lumix.html",
   },
-  Sigma: {
-    name: "Sigma Lenses",
-    icon: "/assets/images/icons/sigma.svg", // Custom SVG path
-    link: "https://www.sigma-global.com/en/lenses/",
+  Leica: {
+    name: "Leica Lenses",
+    icon: "/assets/images/tech-icons/leica.svg", 
+    link: "https://www.leicacamerausa.com/photography/lenses-by-type",
   },
-  DaVinciResolve: {
+  Resolve: {
     name: "DaVinci Resolve",
-    icon: "/assets/images/icons/davinciresolve.svg", // Custom SVG path
+    icon: "/assets/images/tech-icons/resolve.svg", 
     link: "https://www.blackmagicdesign.com/products/davinciresolve",
   },
   Zoom: {
     name: "Zoom Recorders",
-    icon: "/assets/images/icons/zoom.svg", // Custom SVG path
+    icon: "/assets/images/tech-icons/zoom.svg", 
     link: "https://zoomcorp.com/en/us/handheld-recorders/",
   },
   Zeiss: {
     name: "Zeiss Lenses",
-    icon: "/assets/images/icons/zeiss.svg", // Custom SVG path
+    icon: "/assets/images/tech-icons/zeiss.svg", 
     link: "https://www.zeiss.com/consumer-products/int/photography.html",
   },
 };
@@ -179,15 +180,20 @@ const ProjectIcons = ({ icons }) => {
       {icons.map((iconName, idx) => {
         const iconData = iconMap[iconName];
 
+        // error handling if no icons in projects data
+        if (!iconData) {
+          console.error(`Icon with name "${iconName}" not found in iconMap`);
+          return null;
+        }
+
         // custom SVGs icons - <Image> component
         if (typeof iconData.icon === "string") {
           return (
-            <IconButton
+            <Button
               key={idx}
               as="a"
               href={iconData.link}
               aria-label={iconData.name}
-              icon={<Image src={iconData.icon} size="30" />} 
               variant="ghost"
               p={0}
               minW={0}
@@ -197,7 +203,9 @@ const ProjectIcons = ({ icons }) => {
                   transition: 'transform 0.2s',
                 },
               }}
-            />
+            >
+              <Image src={iconData.icon} boxSize="37px" /> {/* Render custom SVG with Image */}
+            </Button>
           );
         }
 

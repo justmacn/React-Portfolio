@@ -13,7 +13,7 @@ export const projects = [
       image: "/assets/video/director's_reel-1080.mp4",
       title: "Project 2",
       description: "A short description of Project 2.",
-      icons: ["Adobe Premiere Pro", "Final Cut"],
+      icons: ["Lumix", "Canon", "Zeiss", "Leica", "PremierePro", "Photoshop", "Resolve"],
       position: "Producer, Director",
       projectType: "Visual",
       url: "https://vimeo.com/370447076?share=copy",
