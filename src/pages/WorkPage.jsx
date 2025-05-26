@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, MenuButton, MenuList, MenuItemOption, MenuOptionGroup, Button, Box } from '@chakra-ui/react';
+import { Menu, MenuButton, MenuList, MenuItemOption, MenuOptionGroup, Button, Box, Flex } from '@chakra-ui/react';
 import { HiSortDescending } from "react-icons/hi";
 import { projects } from '../data/projects';
 import MediaCarousel from '../components/UI/MediaCarousel';
@@ -53,9 +53,9 @@ const WorkPage = () => {
 
   return (
     <Box as='main' p={10} mt={4} display='flex' flexDirection='column' justifyContent='center'>
-      <Box display="flex" justifyContent="end" mb={6}>
-
-        {/* project tabs/menu */}
+      
+      {/* sort menu */}
+      <Box className='menu-container' display="flex" justifyContent="end" mb={6}>
         <Menu closeOnSelect>
           <Box>
             <MenuButton
@@ -66,54 +66,49 @@ const WorkPage = () => {
               className='menu'
               colorScheme='whiteAlpha'
               _hover={{ bg: 'transparent', color: '#ffebc5', borderColor: 'transparent' }}
-              _focus={{ outline: 'none', boxShadow: 'none'}}
+              _focus={{ outline: 'none', boxShadow: 'none' }}
             >
               Sort
             </MenuButton>
           </Box>
-
           <MenuList background='#1d1d1d' border='none' minWidth='150px'>
             <MenuOptionGroup title='' type="radio" defaultValue="0" onChange={(value) => handleTabChange(Number(value))}>
-              <MenuItemOption 
+              <MenuItemOption
                 value="0"
                 className='tab'
-                background='#1d1d1d' 
+                background='#1d1d1d'
                 _hover={{ bg: '#565656', borderColor: 'transparent' }}
-                _focus={{ outline: 'none', boxShadow: 'none'}}
-                _checked={{ color: '#ffbb00'}}                
+                _focus={{ outline: 'none', boxShadow: 'none' }}
+                _checked={{ color: '#ffbb00' }}
               >
                 All Projects
-                </MenuItemOption>
-
-              <MenuItemOption 
+              </MenuItemOption>
+              <MenuItemOption
                 value="1"
                 className='tab'
-                background='#1d1d1d' 
+                background='#1d1d1d'
                 _hover={{ bg: '#565656', borderColor: 'transparent' }}
-                _focus={{ outline: 'none', boxShadow: 'none'}}
-                _checked={{ color: '#ffbb00'}}                 
+                _focus={{ outline: 'none', boxShadow: 'none' }}
+                _checked={{ color: '#ffbb00' }}
               >
-              Coding
+                Coding
               </MenuItemOption>
-
-              <MenuItemOption 
+              <MenuItemOption
                 value="2"
                 className='tab'
-                background='#1d1d1d' 
+                background='#1d1d1d'
                 _hover={{ bg: '#565656', borderColor: 'transparent' }}
-                _focus={{ outline: 'none', boxShadow: 'none'}}
-                _checked={{ color: '#ffbb00'}}                
+                _focus={{ outline: 'none', boxShadow: 'none' }}
+                _checked={{ color: '#ffbb00' }}
               >
-              Visuals
+                Visuals
               </MenuItemOption>
-
             </MenuOptionGroup>
           </MenuList>
-
         </Menu>
       </Box>
 
-      {/* render media carousel based on tab */}
+      {/* media carousel */}
       <Box as='section' mt={6}>
         {filteredProjects.length > 0 ? (
           <MediaCarousel

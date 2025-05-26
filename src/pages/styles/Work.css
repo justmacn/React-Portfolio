@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
 
 /* menu styling */
+.menu-container {
+    margin-right: 14rem;
+    transform: translateY(5.25rem);
+}
+
 .menu {
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     font-weight: 400;
     /* text-transform: uppercase */
-    color: #c2c1c1;
+    color: #767676;
 }
 
 .tab {

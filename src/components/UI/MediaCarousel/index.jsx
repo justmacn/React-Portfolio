@@ -48,7 +48,7 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
         </Box>
 
         {/* Center: carousel viewer */}
-        <Box as='div' className='media-container' width='50%'>
+        <Box as='div' className='media-container'>
             <Slider ref={slider => {sliderRef = slider;}} {...settings}>
             {projects.map((project, index) => (
                 <Box key={index}>
