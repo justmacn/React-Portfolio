@@ -26,10 +26,10 @@ const WorkPage = () => {
         setCurrentTab("All");
         break;
       case 1:
-        setCurrentTab("Visual");
+        setCurrentTab("Code");
         break;
       case 2:
-        setCurrentTab("Code");
+        setCurrentTab("Visual");
         break;
       default:
         break;
@@ -53,11 +53,11 @@ const WorkPage = () => {
   return (
     <Box as='main' p={10}>
       <Tabs onChange={handleTabChange} variant="unstyle">
-        <Box as='div' display='flex' justifyContent='start'>
+        <Box as='div' display='flex' justifyContent='end'>
           <TabList className='tab-group'>
             <Tab className='tab tab1'>All</Tab>
-            <Tab className='tab tab2'>Film</Tab>
             <Tab className='tab tab3'>Code</Tab>
+            <Tab className='tab tab2'>Visual</Tab>
           </TabList>
         </Box>
 

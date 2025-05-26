@@ -2,49 +2,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
 
 /* carousel styling */
-.media-container {
+.carousel {
+    width: 100%;
+    height: 100%;
+    margin-left: 1rem;
+}
+
+/* .media-container {
     max-width: 880px;
     min-width: 880px;
-}
+} */
 
 .media-item {
-    max-width: 50vw;
-    max-height: 50vh;
-    /* width: auto; */
-    /* height: auto; */
-    object-fit: contain; /* Ensures the image/video maintains its aspect ratio */
+    width: auto;
+    height: auto;
+    max-width: 100%;
     border-radius: 3%;
-  }
-  
-/* arrow button styling */
-.nextBtn {
-    margin-right: -16rem;
 }
+
 
 /* info card styling */
-.info-container {
-    padding: 0;
-}
-
 .info-container .title {
     font-family: 'Exo 2', sans;
-    font-size: 72px;
+    font-size: 56px;
     font-weight: 700;
+    margin-bottom: 25%;
 }
 
 .info-container .role {
     font-family: 'Josefin Sans', sans;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
+    margin-bottom: 25%;
 }
 
 .info-container .description {
     font-family: 'Exo 2', sans;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 }
 
 .info-container .demo-link {
     text-decoration: underline;
+    font-size: 14px;
 }
+
+
+/* .info-container {
+  transform: translateY(1rem);
+} */
+
+

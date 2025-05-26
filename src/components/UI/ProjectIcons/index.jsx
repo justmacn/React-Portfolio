@@ -177,7 +177,7 @@ const iconMap = {
 const ProjectIcons = ({ icons }) => {
   return (
     <HStack spacing={2} mt={4} mb={2} align='start'>
-      {icons.map((iconName, idx) => {
+      {icons.map((iconName, index) => {
         const iconData = iconMap[iconName];
 
         // error handling if no icons in projects data
@@ -190,7 +190,7 @@ const ProjectIcons = ({ icons }) => {
         if (typeof iconData.icon === "string") {
           return (
             <Button
-              key={idx}
+              key={index}
               as="a"
               href={iconData.link}
               aria-label={iconData.name}
@@ -212,7 +212,7 @@ const ProjectIcons = ({ icons }) => {
         // imported devicons - <Icon> component
         return iconData ? (
           <IconButton
-            key={idx}
+            key={index}
             as="a"
             href={iconData.link}
             aria-label={iconData.name}
