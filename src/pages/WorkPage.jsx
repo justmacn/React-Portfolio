@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from '@chakra-ui/react';
+import { Menu, MenuButton, MenuList, MenuItemOption, MenuOptionGroup, Button, Box } from '@chakra-ui/react';
+import { HiSortDescending } from "react-icons/hi";
 import { projects } from '../data/projects';
 import MediaCarousel from '../components/UI/MediaCarousel';
 import './styles/Work.css'
@@ -52,63 +53,43 @@ const WorkPage = () => {
 
   return (
     <Box as='main' p={10}>
-      <Tabs onChange={handleTabChange} variant="unstyle">
-        <Box as='div' display='flex' justifyContent='end'>
-          <TabList className='tab-group'>
-            <Tab className='tab tab1'>All</Tab>
-            <Tab className='tab tab3'>Code</Tab>
-            <Tab className='tab tab2'>Visual</Tab>
-          </TabList>
-        </Box>
+      <Box display="flex" justifyContent="end" mb={6}>
+        <Menu closeOnSelect>
+          <MenuButton
+            as={Button}
+            leftIcon={<HiSortDescending />}
+            variant="none"
+            size="sm"
+            className='tab'
+            colorScheme='whiteAlpha'
+          >
+            Filter
+          </MenuButton>
+          <MenuList>
+            <MenuOptionGroup
+              type="radio"
+              defaultValue="0"
+              onChange={(value) => handleTabChange(Number(value))}
+            >
+              <MenuItemOption className='tab' value="0">All Projects</MenuItemOption>
+              <MenuItemOption className='tab' value="1">Coding</MenuItemOption>
+              <MenuItemOption className='tab' value="2">Film</MenuItemOption>
+            </MenuOptionGroup>
+          </MenuList>
+        </Menu>
+      </Box>
 
-        <Box as='section'>
-          <TabPanels>
-            <TabPanel>
-              {filteredProjects.length > 0 ? (
-                <>
-                  <Box>
-                    <MediaCarousel
-                      projects={filteredProjects}
-                      onSlideChange={handleCarouselChange}
-                      info={currentProject}
-                    />
-                  </Box>
-                </>
-              ) : (
-                <p>No projects available.</p>
-              )}
-            </TabPanel>
-
-            <TabPanel>
-              {filteredProjects.length > 0 ? (
-                <>
-                  <MediaCarousel
-                    projects={filteredProjects}
-                    onSlideChange={handleCarouselChange}
-                    info={currentProject}
-                  />
-                </>
-              ) : (
-                <p>No projects available for Visual.</p>
-              )}
-            </TabPanel>
-
-            <TabPanel>
-              {filteredProjects.length > 0 ? (
-                <>
-                  <MediaCarousel
-                    projects={filteredProjects}
-                    onSlideChange={handleCarouselChange}
-                    info={currentProject}
-                  />
-                </>
-              ) : (
-                <p>No projects available for Code.</p>
-              )}
-            </TabPanel>
-          </TabPanels>
-        </Box>
-      </Tabs>
+      <Box as='section' mt={6}>
+        {filteredProjects.length > 0 ? (
+          <MediaCarousel
+            projects={filteredProjects}
+            onSlideChange={handleCarouselChange}
+            info={currentProject}
+          />
+        ) : (
+          <p>No projects available for {currentTab}.</p>
+        )}
+      </Box>
     </Box>
   );
 };

@@ -67,12 +67,13 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
 
         {/* Right: carousel nav buttons */}
         <Box as='div' className='btn-container' width='12%'>
-            <VStack spacing={4}>
+            <VStack spacing={3}>
             <IconButton
               icon={<LeftSquare theme="outline" size="60" fill="#ffffff" strokeWidth={1.25} strokeLinecap="square" />}
               variant="link"
               onClick={previous}
               className="prevBtn"
+              alignSelf="flex-start"
               _focus={{ outline: 'none', boxShadow: 'none' }}  // Remove default blue outline
               _hover={{ bgColor: 'transparent', fill: '#ffbb00', outline: 'none', boxShadow: 'none' }}
               // _active={{
@@ -87,6 +88,7 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
               variant='link'
               onClick={next}
               className='nextBtn'
+              alignSelf="flex-end"
               _focus={{ outline: 'none', boxShadow: 'none' }}  // Remove default blue outline
               _hover={{ bgColor: 'transparent', fill: '#ffbb00', outline: 'none', boxShadow: 'none' }}
               // _active={{

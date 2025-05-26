@@ -11,7 +11,7 @@ const ProjectInfoCard = ({ project }) => {
   }
 
   return (
-    <Box p={6} borderWidth={0} borderRadius="lg">
+    <Box as='div' p={6} borderWidth={0} borderRadius="lg">
       {/* project info */}
       <Heading as='h1' className='title'>{project.title}</Heading>
       <Text as='h3' className='role' mt={2}>{project.position}</Text>
@@ -19,7 +19,7 @@ const ProjectInfoCard = ({ project }) => {
 
 
       {/* demo link */}
-      <Box mt={0} mb={12}>
+      <Box as='div' mt={0} mb={12}>
         <Link href={`${project.url}`} color="teal.500">
           <span className='demo-link'>Live Demo</span><span><Icon as={Right} theme="outline" size="25" fill="#333" strokeWidth={2} strokeLinecap="square" /></span>
         </Link>

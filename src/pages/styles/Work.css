@@ -10,19 +10,21 @@
 }
 
 .tab-group .tab {
-    text-transform: uppercase;
-    padding: 8px;
-    border: 1px solid none;
-    margin: 6px 0;
-    margin-inline: 1px;
-    width: 4.5rem;
-    height: 2.25rem;
-    font-size: 13px;
-    font-family: 'Albert Sans';
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 8px;
+  height: 2.25rem;
+  width: 3rem;                     /* 🔥 Uniform width */
+  font-size: 12px;                /* Smaller font for fit */
+  font-family: 'Albert Sans';
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-align: center;             /* Center text inside tab */
+  display: flex;                  /* Force content centering */
+  align-items: center;
+  justify-content: center;
 }
+
 
 /* individual tab coloring */
 /* .tab-group .tab1 {

@@ -48,9 +48,14 @@
     font-size: 14px;
 }
 
-
 /* .info-container {
   transform: translateY(1rem);
 } */
+
+
+/* button styling */
+.nextBtn {
+    transform: translateX();
+}
 
 
