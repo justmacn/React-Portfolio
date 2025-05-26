@@ -1,43 +1,18 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
 
-/* tab styling */
-.tab-group {
-    margin-right: 1.5rem;
-    margin-top: 2rem;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+/* menu styling */
+.menu {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    /* text-transform: uppercase */
+    color: #c2c1c1;
 }
 
-.tab-group .tab {
-  text-transform: uppercase;
-  padding: 8px;
-  height: 2.25rem;
-  width: 3rem;                     /* 🔥 Uniform width */
-  font-size: 12px;                /* Smaller font for fit */
-  font-family: 'Albert Sans';
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  text-align: center;             /* Center text inside tab */
-  display: flex;                  /* Force content centering */
-  align-items: center;
-  justify-content: center;
+.tab {
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
-
-
-/* individual tab coloring */
-/* .tab-group .tab1 {
-    background-color: #c8c8c859;
-    margin-right: 5px;
-}
-
-.tab-group .tab2 {
-    background-color: #c8c8c859;
-    margin-inline: 10px;
-}
-
-.tab-group .tab3 {
-    background-color: #c8c8c859;
-    margin-left: 5px;
-} */

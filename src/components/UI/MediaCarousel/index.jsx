@@ -74,13 +74,13 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
               onClick={previous}
               className="prevBtn"
               alignSelf="flex-start"
-              _focus={{ outline: 'none', boxShadow: 'none' }}  // Remove default blue outline
-              _hover={{ bgColor: 'transparent', fill: '#ffbb00', outline: 'none', boxShadow: 'none' }}
+              _focus={{ outline: 'none', boxShadow: 'none' }}  
+              _hover={{ bgColor: 'transparent', fill: '##ffebc5', boxShadow: 'none', borderColor: 'transparent' }}
               // _active={{
               //   '& svg': {
-              //     fill: '#ffbb00',  // Maintain fill color when active
+              //     fill: '#ffbb00', 
               //   },
-              //   boxShadow: '0 0 10px #ffbb00',  // Add glow effect
+              //   boxShadow: '0 0 10px #ffbb00',  
               // }}
             />
             <IconButton 
@@ -89,13 +89,13 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
               onClick={next}
               className='nextBtn'
               alignSelf="flex-end"
-              _focus={{ outline: 'none', boxShadow: 'none' }}  // Remove default blue outline
-              _hover={{ bgColor: 'transparent', fill: '#ffbb00', outline: 'none', boxShadow: 'none' }}
+              _focus={{ outline: 'none', boxShadow: 'none', fill: '#ffebc5' }} 
+              _hover={{ bgColor: 'transparent', fill: '##ffebc5', boxShadow: 'none', borderColor: 'transparent' }}
               // _active={{
               //   '& svg': {
-              //     fill: '#ffbb00',  // Maintain fill color when active
+              //     fill: '#ffbb00',  
               //   },
-              //   boxShadow: '0 0 10px #ffbb00',  // Add glow effect
+              //   boxShadow: '0 0 10px #ffbb00',  
               // }}
             />
             </VStack>

@@ -52,33 +52,68 @@ const WorkPage = () => {
     : projects.filter((project) => project.projectType === currentTab);
 
   return (
-    <Box as='main' p={10}>
+    <Box as='main' p={10} mt={4} display='flex' flexDirection='column' justifyContent='center'>
       <Box display="flex" justifyContent="end" mb={6}>
+
+        {/* project tabs/menu */}
         <Menu closeOnSelect>
-          <MenuButton
-            as={Button}
-            leftIcon={<HiSortDescending />}
-            variant="none"
-            size="sm"
-            className='tab'
-            colorScheme='whiteAlpha'
-          >
-            Filter
-          </MenuButton>
-          <MenuList>
-            <MenuOptionGroup
-              type="radio"
-              defaultValue="0"
-              onChange={(value) => handleTabChange(Number(value))}
+          <Box>
+            <MenuButton
+              as={Button}
+              leftIcon={<HiSortDescending />}
+              variant="none"
+              size="md"
+              className='menu'
+              colorScheme='whiteAlpha'
+              _hover={{ bg: 'transparent', color: '#ffebc5', borderColor: 'transparent' }}
+              _focus={{ outline: 'none', boxShadow: 'none'}}
             >
-              <MenuItemOption className='tab' value="0">All Projects</MenuItemOption>
-              <MenuItemOption className='tab' value="1">Coding</MenuItemOption>
-              <MenuItemOption className='tab' value="2">Film</MenuItemOption>
+              Sort
+            </MenuButton>
+          </Box>
+
+          <MenuList background='#1d1d1d' border='none' minWidth='150px'>
+            <MenuOptionGroup title='' type="radio" defaultValue="0" onChange={(value) => handleTabChange(Number(value))}>
+              <MenuItemOption 
+                value="0"
+                className='tab'
+                background='#1d1d1d' 
+                _hover={{ bg: '#565656', borderColor: 'transparent' }}
+                _focus={{ outline: 'none', boxShadow: 'none'}}
+                _checked={{ color: '#ffbb00'}}                
+              >
+                All Projects
+                </MenuItemOption>
+
+              <MenuItemOption 
+                value="1"
+                className='tab'
+                background='#1d1d1d' 
+                _hover={{ bg: '#565656', borderColor: 'transparent' }}
+                _focus={{ outline: 'none', boxShadow: 'none'}}
+                _checked={{ color: '#ffbb00'}}                 
+              >
+              Coding
+              </MenuItemOption>
+
+              <MenuItemOption 
+                value="2"
+                className='tab'
+                background='#1d1d1d' 
+                _hover={{ bg: '#565656', borderColor: 'transparent' }}
+                _focus={{ outline: 'none', boxShadow: 'none'}}
+                _checked={{ color: '#ffbb00'}}                
+              >
+              Visuals
+              </MenuItemOption>
+
             </MenuOptionGroup>
           </MenuList>
+
         </Menu>
       </Box>
 
+      {/* render media carousel based on tab */}
       <Box as='section' mt={6}>
         {filteredProjects.length > 0 ? (
           <MediaCarousel
