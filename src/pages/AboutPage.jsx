@@ -1,54 +1,72 @@
 import React from 'react';
-import { Flex, VStack, Link, Box, Heading, Text, Image, HStack, Icon, Card, CardBody, CardHeader, CardFooter, Divider } from '@chakra-ui/react';
+import { Flex, VStack, Link, Box, Heading, Text, Image, HStack, Icon, Card, CardBody, List, ListItem, ListIcon, Divider, Stack } from '@chakra-ui/react';
 import { FaLinkedin, FaGithub, FaTwitter, FaVimeo } from 'react-icons/fa';
+import { PiBookmarksSimpleFill } from 'react-icons/pi';
+import { Right } from '@icon-park/react';
+import './styles/About.css';
 
 const AboutPage = () => {
   return (
-    <Flex>
+    <Flex direction="row" justify="space-between" align="flex-start" px={12} pt={12} gap={8}>
       {/* left: photo card & social links */}
-      <Box>
-        <Vstack>
-          <Card>
-            <Image 
-            src="/assets/images/RkicXp6zSCCjyyXKyqg7Uw.png"
-            alt="Profile"></Image>
-            <Divider></Divider>
-            <Heading></Heading>
-            <Text></Text>
+        <VStack spacing={6} align="flex-start" width="35%">
+          <Card size='sm' width="60%" variant='elevated' borderRadius='lg' alignSelf='center'>
+            <CardBody >
+              <Image
+                src="/assets/images/RkicXp6zSCCjyyXKyqg7Uw.png"
+                alt="Profile picture"
+                borderRadius='lg'></Image>
+              <Divider></Divider>
+              <Stack mt='3' spacing='2'>
+                <Heading as='h3' className='header'>Things I love...currently</Heading>
+                <List spacing={1}>
+                  <ListItem>
+                    <ListIcon as={PiBookmarksSimpleFill} color='green.500' />
+                    Watching sports
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={PiBookmarksSimpleFill} color='green.500' />
+                    Ranking up in Halo
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={PiBookmarksSimpleFill} color='green.500' />
+                    All things Anime
+                  </ListItem>
+                </List>
+              </Stack>
+            </CardBody>
           </Card>
-          <HStack spacing={8} justify="center" mt={6}>
+          <HStack spacing={4} alignSelf="center" mt={0}>
             <Icon as={FaLinkedin} w={8} h={8} />
             <Icon as={FaGithub} w={8} h={8} />
             <Icon as={FaTwitter} w={8} h={8} />
             <Icon as={FaVimeo} w={8} h={8} />
           </HStack>
-        </Vstack>
-      </Box>
+        </VStack>
+
 
       {/* center: header & text */}
-      <Box>
-        <VStack>
-          <Heading>About Me</Heading>
-          <Text>
+        <VStack spacing={6} align="flex-end">
+          <Heading as='h1' className='title'>About me.</Heading>
+          <Text className='body'>
             I am a storyteller and developer, passionate about creating visual stories through code. My journey has taken me through various roles in tech, where I've honed my skills in web development, design, and user experience.
           </Text>
-          <Text>
+          <Text className='body'>
             I believe in the power of technology to connect people and tell compelling stories. Whether it's through a beautifully designed website or an engaging application, I strive to create experiences that resonate with users.
           </Text>
         </VStack>
-      </Box>
+
 
       {/* Right: tagline & cv */}
-      <Box>
-        <VStack>
-          <Text>
-            Infinite possibiltiies
+        <VStack spacing={6} align="center" width="30%">
+          <Text className='tagline'>
+            Infinite possibilities
           </Text>
-          <Link href={``} color="teal.500">
-          <span className='demo-link'>CV / Resume</span><span><Icon as={Right} theme="outline" size="25" fill="#333" strokeWidth={2} strokeLinecap="square" /></span>
-        </Link>
+          <Link href={`/assets/Resume_Template.pdf`} target="_blank" rel='noopener noreferrer' >
+            <span className='resume-link'>CV / Resume</span><span><Icon as={Right} theme="outline" size="25" fill="#333" strokeWidth={2} strokeLinecap="square" /></span>
+          </Link>
         </VStack>
-      </Box>
+
     </Flex>
 
   );

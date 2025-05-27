@@ -1,0 +1,38 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700&family=Josefin+Sans:wght@300;400&display=swap');
+
+.title {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.header {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.body {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+.tagline {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #c2c2c2;
+}
+
+.resume-link {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #ffbb00;
+}

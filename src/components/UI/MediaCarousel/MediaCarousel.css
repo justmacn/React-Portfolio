@@ -24,6 +24,25 @@
   border-radius: 3%;
 }
 
+/* Make dots visible and center them */
+.slick-dots {
+  margin-top: 2rem
+}
+
+/* Style all dots */
+.slick-dots li button:before {
+  font-size: 0.5rem;
+  color: #e6e6e6; /* Default dot color */
+  opacity: 0.3;
+}
+
+/* Style active dot */
+.slick-dots li.slick-active button:before {
+  color: #e3bf5c; /* Gold color */
+  opacity: 1;
+}
+
+
 
 /* info card styling */
 .info-container {
