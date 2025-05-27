@@ -69,13 +69,13 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
         <Box as='div' className='btn-container' width='12%'>
             <VStack spacing={3}>
             <IconButton
-              icon={<LeftSquare theme="outline" size="60" fill="#ffffff" strokeWidth={1.25} strokeLinecap="square" />}
+              icon={<LeftSquare theme="outline" size="60" fill="#c4c4c4" strokeWidth={1.25} strokeLinecap="square" />}
               variant="link"
               onClick={previous}
               className="prevBtn"
               alignSelf="flex-start"
               _focus={{ outline: 'none', boxShadow: 'none' }}  
-              _hover={{ bgColor: 'transparent', fill: '##ffebc5', boxShadow: 'none', borderColor: 'transparent' }}
+              _hover={{ bgColor: 'transparent', fill: '#ffebc5', boxShadow: 'none', borderColor: 'transparent' }}
               // _active={{
               //   '& svg': {
               //     fill: '#ffbb00', 
@@ -84,13 +84,13 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
               // }}
             />
             <IconButton 
-              icon={<RightSquare theme="outline" size="60" fill="#ffffff" strokeWidth={1.25} strokeLinecap="square"/>}
+              icon={<RightSquare theme="outline" size="60" fill="#c4c4c4" strokeWidth={1.25} strokeLinecap="square"/>}
               variant='link'
               onClick={next}
               className='nextBtn'
               alignSelf="flex-end"
               _focus={{ outline: 'none', boxShadow: 'none', fill: '#ffebc5' }} 
-              _hover={{ bgColor: 'transparent', fill: '##ffebc5', boxShadow: 'none', borderColor: 'transparent' }}
+              _hover={{ bgColor: 'transparent', fill: '#ffebc5', boxShadow: 'none', borderColor: 'transparent' }}
               // _active={{
               //   '& svg': {
               //     fill: '#ffbb00',  
