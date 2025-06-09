@@ -18,7 +18,7 @@ import { //import icons from devicons
   JestPlain,
   GraphqlPlain,
   NpmOriginal,
-  HandlebarsOriginal,
+  HandlebarsLineWordmark,
 } from 'devicons-react';
 import '../MediaCarousel/MediaCarousel.css';
 
@@ -92,7 +92,7 @@ const iconMap = {
   },
   HandlebarsOriginal: {
     name: "Handlebars",
-    icon: HandlebarsOriginal,
+    icon: HandlebarsLineWordmark,
     link: "https://handlebarsjs.com",
   },
   ExpressOriginal: {

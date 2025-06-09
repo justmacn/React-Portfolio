@@ -11,11 +11,11 @@ const ProjectInfoCard = ({ project }) => {
   }
 
   return (
-    <Box as='div' p={6} borderWidth={0} borderRadius="lg">
+    <Box as='div' py={6} pr={6} borderWidth={0} borderRadius="lg">
       {/* project info */}
       <Heading as='h1' className='title'>{project.title}</Heading>
-      <Text as='h3' className='role' mt={2}>{project.position}</Text>
-      <Text as='p' className='description' mt={2}>{project.description}</Text>
+      <Text as='h3' className='role' mt={0}>{project.position}</Text>
+      <Text as='p' className='description' mt={0}>{project.description}</Text>
 
 
       {/* demo link */}

@@ -47,7 +47,7 @@ const MediaCarousel = ({ projects, onSlideChange, info }) => {
     <Flex as='div' direction='row' alignItems="center" justifyContent="space-between" className='carousel' px={{ base: 4, md: 12 }} gap={8}>
 
       {/* Left: project info */}
-      <Box as='div' className='info-container' width='17%'>
+      <Box as='div' className='info-container' width='24%'>
         <ProjectInfoCard project={info} />
       </Box>
 
