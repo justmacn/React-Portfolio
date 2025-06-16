@@ -1,5 +1,5 @@
 export const projects = [
-    // dummy data, change to full work experience
+    // partial data, change to full work experience
     {
       image: "/assets/images/work-thumbnails/Screen Shot 2024-08-14 at 12.40.01 PM-2.png",
       title: "SenpaiSocial",
